@@ -19,10 +19,6 @@ class SphereModel(BaseModel):
     radius: float = 0
     volume: float = 0
 
-    class Config:
-        arbitrary_types_allowed = True
-        ignored_types = float
-
 
 class CubeModel(BaseModel):
     """
@@ -36,10 +32,6 @@ class CubeModel(BaseModel):
     """
     edge: float = 0
     volume: float = 0
-
-    class Config:
-        arbitrary_types_allowed = True
-        ignored_types = float
 
 
 class PyramidModel(BaseModel):
@@ -60,10 +52,6 @@ class PyramidModel(BaseModel):
     pyramid_height: float = 0
     volume: float = 0
 
-    class Config:
-        arbitrary_types_allowed = True
-        ignored_types = float
-
 
 class ParallelepipedModel(BaseModel):
     """
@@ -82,10 +70,6 @@ class ParallelepipedModel(BaseModel):
     edge_c: float = 0
     volume: float = 0
 
-    class Config:
-        arbitrary_types_allowed = True
-        ignored_types = float
-
 
 class CylinderModel(BaseModel):
     """
@@ -103,10 +87,6 @@ class CylinderModel(BaseModel):
     cylinder_height: float = 0
     volume: float = 0
 
-    class Config:
-        arbitrary_types_allowed = True
-        ignored_types = float
-
 
 class ConeModel(BaseModel):
     """
@@ -123,7 +103,3 @@ class ConeModel(BaseModel):
     base_radius: float = 0
     height: float = 0
     volume: float = 0
-
-    class Config:
-        arbitrary_types_allowed = True
-        ignored_types = float

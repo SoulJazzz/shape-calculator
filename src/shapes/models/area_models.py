@@ -20,9 +20,6 @@ class RectangleModel(BaseModel):
     width: float = 0
     area: float = 0
 
-    class Config:
-        arbitrary_types_allowed = True
-
 
 class CircleModel(BaseModel):
     """
@@ -37,9 +34,6 @@ class CircleModel(BaseModel):
 
     radius: float = 0
     area: float = 0
-
-    class Config:
-        arbitrary_types_allowed = True
 
 
 class SquareModel(BaseModel):
@@ -81,9 +75,6 @@ class TriangleModel(BaseModel):
     mB: float = 0
     mC: float = 0
 
-    class Config:
-        arbitrary_types_allowed = True
-
     def medians_to_str(self):
         return f"A = {self.mA}, B={self.mB}, C={self.mC}"
 
@@ -106,9 +97,6 @@ class TrapezoidModel(BaseModel):
     length_max: float = 0
     area: float = 0
 
-    class Config:
-        arbitrary_types_allowed = True
-
 
 class RhombusModel(BaseModel):
     """
@@ -124,6 +112,3 @@ class RhombusModel(BaseModel):
     diagonals_1: float = 0
     diagonals_2: float = 0
     area: float = 0
-
-    class Config:
-        arbitrary_types_allowed = True
